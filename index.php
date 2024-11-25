@@ -15,10 +15,13 @@ require("assets/data/db.php");
 
     <main>
         <h1>Bienvenue sur mon site !</h1>
-    </main>
+        <form action="">
+                <label for="">Nom de la recette :</label>
+                <input type="text">
+            </main>
+        </form>
 
-
-    <?php require("includes/footer.html"); ?>
+    <?php require("includes/footer.php"); ?>
 
     <script src="assets/js/script.js"></script>
 
