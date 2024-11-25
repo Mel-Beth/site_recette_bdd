@@ -1,0 +1,71 @@
+/* Styles pour la barre de navigation */
+.main-nav {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+    z-index: 1000; /* Assurez-vous que la barre de navigation est au-dessus */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Ombre pour la barre de navigation */
+  }
+  
+  .main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-nav ul li {
+    float: left;
+    position: relative; /* Nécessaire pour le dropdown */
+  }
+  
+  .main-nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px; /* Augmentation de l'espacement */
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s; /* Ajoute une transition douce */
+  }
+  
+  .main-nav ul li a:hover {
+    background-color: #ffcc00; /* Change la couleur de fond au survol */
+    transform: scale(1.05); /* Agrandissement au survol */
+  }
+  
+  /* Styles pour le menu déroulant */
+  .dropdown {
+    display: none; /* Cacher le dropdown par défaut */
+    position: absolute; /* Positionner le dropdown */
+    background-color: rgba(30, 30, 30, 0.95); /* Fond sombre semi-transparent */
+    min-width: 200px; /* Largeur minimale du dropdown */
+    z-index: 9999; /* Augmentez le z-index pour le test */
+    margin-top: 10px; /* Ajoutez une marge pour le rendre visible */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Ombre pour un effet de profondeur */
+    overflow: hidden; /* Cache les débordements */
+  }
+  
+  .dropdown li {
+    float: none; /* Éléments de la liste en mode bloc */
+    text-align: left; /* Alignement à gauche pour les éléments du dropdown */
+  }
+  
+  .dropdown li a {
+    padding: 12px 20px; /* Espacement pour les éléments du dropdown */
+    color: #ffcc00; /* Couleur du texte en jaune pour contraster avec le fond sombre */
+    transition: background-color 0.3s, padding-left 0.3s; /* Transition douce pour le survol */
+  }
+  
+  .dropdown li a:hover {
+    background-color: rgba(255, 204, 0, 0.2); /* Couleur de fond au survol des éléments du dropdown */
+    padding-left: 30px; /* Ajoute un effet d'indentation au survol */
+  }
+  
+  /* Afficher le dropdown au survol */
+  .main-nav ul li:hover .dropdown {
+    display: block; /* Afficher le dropdown au survol */
+  }
+  
+  /* Ajout d'un style pour éviter le chevauchement */
+  .dropdown li {
+    clear: both; /* S'assurer que les éléments ne se chevauchent pas */
+  }

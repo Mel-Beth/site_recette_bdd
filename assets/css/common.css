@@ -1,0 +1,17 @@
+@import url(header.css);
+@import url(index.css);
+@import url(footer.css);
+
+*,*:before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin-top: 120px; /* Vous pouvez ajuster cette valeur */
+    padding-top: 60px; /* Ajoutez une marge supérieure si nécessaire */
+    font-family: 'Merriweather', sans-serif;
+    text-align: center;
+    color: black;
+}
