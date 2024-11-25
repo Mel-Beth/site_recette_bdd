@@ -11,9 +11,11 @@ require("assets/data/db.php");
 
 <body>
 
-    <?php require("includes/header.html"); ?>
+    <?php require("includes/header.php"); ?>
 
-
+    <main>
+        <h1>Bienvenue sur mon site !</h1>
+    </main>
 
 
     <?php require("includes/footer.html"); ?>
