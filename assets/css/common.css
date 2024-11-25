@@ -1,5 +1,5 @@
 @import url(header.css);
-@import url(index.css);
+@import url(style.css);
 @import url(footer.css);
 
 *,*:before,*::after {
@@ -9,8 +9,7 @@
 }
 
 h1{
-    margin-top: 120px; /* Vous pouvez ajuster cette valeur */
-    padding-top: 60px; /* Ajoutez une marge supérieure si nécessaire */
+    margin-top: 50px; 
     font-family: 'Merriweather', sans-serif;
     text-align: center;
     color: black;
